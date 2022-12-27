@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+// import css from './Profile.module.css';
+import { getFormatNumber } from 'utils';
 import {
   Container,
   Description,
@@ -30,15 +32,15 @@ export const Profile = ({
       <Stats>
         <li>
           <Label>Followers</Label>
-          <Quantity>{followers}</Quantity>
+          <Quantity>{getFormatNumber(followers)}</Quantity>
         </li>
         <li>
           <Label>Views</Label>
-          <Quantity>{views}</Quantity>
+          <Quantity>{getFormatNumber(views)}</Quantity>
         </li>
         <li>
           <Label>Likes</Label>
-          <Quantity>{likes}</Quantity>
+          <Quantity>{getFormatNumber(likes)}</Quantity>
         </li>
       </Stats>
     </Container>

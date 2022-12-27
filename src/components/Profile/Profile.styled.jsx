@@ -2,10 +2,11 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   width: 350px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.021);
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+
   background-color: ${props => props.theme.colors.white};
 `;
 
@@ -33,6 +34,7 @@ export const Name = styled.p`
 export const Tag = styled.p`
   margin-top: 15px;
   font-size: 20px;
+
   color: ${props => props.theme.colors.primaryText};
   opacity: 0.5;
 `;
@@ -40,6 +42,7 @@ export const Tag = styled.p`
 export const Location = styled.p`
   margin-top: 15px;
   font-size: 16px;
+
   color: ${props => props.theme.colors.primaryText};
   opacity: 0.5;
 `;
@@ -48,21 +51,27 @@ export const Stats = styled.ul`
   margin-top: 30px;
   padding: 15px;
   height: 100px;
+
   background-color: ${props => props.theme.colors.stats};
+
   display: flex;
   justify-content: center;
+
   li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     flex-basis: calc(100% / 3);
+
     border: 1px solid transparent;
   }
 `;
 
 export const Label = styled.span`
   font-size: 20px;
+
   color: ${props => props.theme.colors.primaryText};
   opacity: 0.5;
 `;
